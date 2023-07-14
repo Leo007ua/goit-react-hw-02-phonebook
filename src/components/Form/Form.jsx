@@ -19,21 +19,23 @@ class Form extends Component {
     });
   };
 
-  handleOnSubmit = evt => {
-    evt.preventDefault();
-    const finded = this.props.contactsArr.find(contact => contact.name === this.state.name);
-    if(finded){
+  handleOnSubmit = (event) => {
+    event.preventDefault();
+    const search = this.props.contactsArray.find(
+      (contact) => contact.name === this.state.name
+    );
+    if (search) {
       alert(`${this.state.name} is already in contacts`);
-      return
-    }    
+      return;
+    }
     this.props.formAddContact(this.state);
-    this.reset(evt);
-  };
+    this.reset(event);
+}
 
-  reset = evt => {
-    evt.target.reset();
+reset = (event) => {
+    event.target.reset();
     this.setState({ ...INITIAL_STATE });
-  };
+}
 
   render() {
     return (
@@ -73,7 +75,7 @@ class Form extends Component {
 
 Form.propTypes = {
   formAddContact: PropTypes.func.isRequired,
-  contactsArr: PropTypes.array,  
+  contactsArr: PropTypes.array,
 };
 
 export default Form;

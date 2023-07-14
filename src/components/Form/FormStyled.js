@@ -13,16 +13,17 @@ label{
 input {
     padding: 10px 15 px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 5px;
+    height: 30px;
 }
 
 button {
-    width: 100px;
     padding: 10px;
-    border-radius: 15px;
+    border-radius: 5px;
     cursor: pointer;
-    background-color: green;
+    background-color: aquamarine;
     &:hover{
-        background-color: yellow;
+        background-color: lightgreen;
     }
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
 }`

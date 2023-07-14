@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import Container from './Container/Container';
+import Container from './Wraper/Wraper';
 
 const INITIAL_STATE = {
   contacts: [],

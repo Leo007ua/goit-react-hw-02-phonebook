@@ -4,7 +4,7 @@ import { InputStyled } from './FilterStyled';
 const Filter = ({ value, handleOnChangeFilter }) => {
   return (
     <>
-      <h3>Find contact</h3>
+      <h3>Find contact by name</h3>
       <InputStyled type="text" value={value} onChange={handleOnChangeFilter} />
     </>
   );
