@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types';
 import { Section } from './WraperStyled';
-import ContactForm from 'components/Form/Form';
 import Filter from 'components/Filter/Filter';
 import Contacts from 'components/Contacts/Contacts';
+import Form from 'components/Form/Form';
 
 function Container({
   formAddContact,
@@ -16,9 +16,9 @@ function Container({
     <Section>
       <h1>PhoneBook</h1>
 
-      <ContactForm
+      <Form
         formAddContact={formAddContact}
-        cotactsArray={contactsArray}
+        contactsArray={contactsArray}
       />
       <h2>Contacts</h2>
       <Filter value={value} handleOnChangeFilter={handleOnChangeFilter} />

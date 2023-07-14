@@ -22,13 +22,15 @@ export class App extends Component {
       localStorage.setItem('contacts', stringifiedContacts);
     }
     const checkLocal = JSON.parse(localStorage.getItem('contacts'));
-    console.log(checkLocal);
+    // console.log(checkLocal);
     if (!(checkLocal && checkLocal.length)) {
       localStorage.removeItem('contacts');
     }
   }
 
   formAddContact = contactData => {
+    // console.log(contactData)
+    // console.log(this.state.contacts)
     const contact = { id: nanoid(), ...contactData };
     this.setState(prevState => ({
       contacts: [contact, ...prevState.contacts],

@@ -21,6 +21,7 @@ class Form extends Component {
 
   handleOnSubmit = (event) => {
     event.preventDefault();
+    // console.log(this.props)
     const search = this.props.contactsArray.find(
       (contact) => contact.name === this.state.name
     );
