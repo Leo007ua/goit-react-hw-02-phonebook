@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import { nanoid } from 'nanoid';
-import Container from './Wraper/Wraper';
+import Wraper from './Wraper/Wraper';
 
 const INITIAL_STATE = {
   contacts: [],
@@ -57,7 +57,7 @@ export class App extends Component {
     const filteredContact = this.getFilteredContact();
     return (
       <>
-        <Container
+        <Wraper
           formAddContact={this.formAddContact}
           value={this.state.filter}
           handleOnChangeFilter={this.handleOnChangeFilter}
