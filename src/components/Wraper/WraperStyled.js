@@ -9,5 +9,5 @@ border: solid 2px black;
 border-radius: 5px;
 padding: 10px;
 box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
-/* background-color: lightskyblue; */
+background-color: white;
 `
